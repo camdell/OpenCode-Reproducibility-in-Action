@@ -93,6 +93,7 @@ because data was manually entered from survey forms.
         - this tell git the files that we want to include in our next commit (snapshot).
     - `git commit -m '{MESSAGE}'` saves the current state of the files added via `git add` into a commit (snapshot).
     - `git diff {...FILES}` show the differences between the current state of the files and the last time they were included in a commit (snapshot).
+    - `git log` show the timeline of commits (snapshots) and their associated metadata messages
 
 **Pixi**: cross platform tool that allows on to easily create reproducible software environments.
 
