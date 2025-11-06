@@ -87,6 +87,12 @@ because data was manually entered from survey forms.
 **Git**: allows us to both collaborate and track the history of our code.
     - `git init .` initialize a git repository for a given folder
         - `.` shorthand means the current folder that our terminal is in
+    - `git status` (needs to be run from within a git initialized repository)
+        - tells you the state of your files in the current repo
+    - `git add {...FILES}` or `git add .`
+        - this tell git the files that we want to include in our next commit (snapshot).
+    - `git commit -m '{MESSAGE}'` saves the current state of the files added via `git add` into a commit (snapshot).
+    - `git diff {...FILES}` show the differences between the current state of the files and the last time they were included in a commit (snapshot).
 
 **Pixi**: cross platform tool that allows on to easily create reproducible software environments.
 
