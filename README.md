@@ -97,8 +97,26 @@ because data was manually entered from survey forms.
 
 **Pixi**: cross platform tool that allows on to easily create reproducible software environments.
 
+You can install [pixi](https://pixi.sh/dev/installation/)
+- `pixi init .` initializes a pixi project in the current folder.
+- `pixi add {...PACKAGE NAMES}` installs the specified software packages and adds them to `pixi.toml`
+- `pixi run {ANY COMMAND TO RUN IN THE ENV}` executes the specified command using the tools available as specified by the `pixi.toml` file.
+
 **Python**: general purpose programming language
 - pandas for tabular data analysis/cleaning
 - Marimo Notebooks for data exploration/iteration
+    - `pixi run marimo edit .` this open a marmio notebook server on the current working directory
 
 **R**: programming languague to ease working with data and statistical models
+    - `Rscript` allows us to run an R script file from the command line
+
+
+## To Reproduce my Analysis
+
+Thanks to pixi, we can have some confidence that this will work on multiple different operating systems.
+
+```sh
+pixi shell
+python data-exploration.py
+Rscript analysis.R
+```

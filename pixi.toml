@@ -1,0 +1,16 @@
+[workspace]
+authors = ["Cameron Riddell <cameron@dutc.io>"]
+channels = ["conda-forge"]
+name = "2025-11-07-OpenCode-Reproducibility"
+platforms = ["linux-64", "win-64", "osx-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "==3.12.12"
+pandas = ">=2.3.3,<3"
+numpy = ">=2.3.4,<3"
+matplotlib = ">=3.10.7,<4"
+marimo = ">=0.17.7,<0.18"
+r-base = ">=4.5.2,<4.6"
